@@ -60,19 +60,13 @@ public abstract class Product implements Item {
     return serialNumber;
   }
 
-  //Add a constructor that will take in the name of the product and set
-  // this to the field variable name. You
-  //will also assign a serial number from the currentProductionNumber.
-  // The currentProductionNumber
-  //should be incremented in readiness for the next instance.
-  //Set manufacturedOn as the current date and time.
-
-  /*** <p></p>
+  /***
+   *
    * This Construct sets the name of the product and assigns a
    * serial number and manufactured on date to the product.
    * @param productName The product that is being modified.
    *
-   * */
+   ***/
   public Product(String productName) {
 
     this.name = productName;

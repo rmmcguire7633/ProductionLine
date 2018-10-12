@@ -19,6 +19,7 @@ public enum ItemType {
   final String code;
 
   ItemType(String newCode) {
+
     code = newCode;
   }
 

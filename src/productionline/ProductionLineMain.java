@@ -13,18 +13,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-public class ProductionLineMain extends Application {
-
-  @Override
-  public void start(Stage primaryStage) throws Exception {
-    Parent root = FXMLLoader.load(getClass().getResource("ProductionLine.fxml"));
-    primaryStage.setTitle("Welcome");
-    primaryStage.setScene(new Scene(root, 300, 275));
-    primaryStage.show();
-  }
+public class ProductionLineMain {
 
   public static void main(String[] args) {
-    launch(args);
+
+    //Step 6 creating driver class to test AudioPlayer Class
+    AudioPlayer audio = new AudioPlayer("music box", "magic");
+    System.out.println(audio);
   }
 }
+
