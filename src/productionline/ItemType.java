@@ -9,13 +9,34 @@
 
 package productionline;
 
+/**
+ * The enum Item type.
+ */
 public enum ItemType {
 
+  /**
+   * Audio item type.
+   */
   AUDIO("AU"),
+
+  /**
+   * Visual item type.
+   */
   VISUAL("VI"),
+
+  /**
+   * Audiomobile item type.
+   */
   AUDIOMOBILE("AM"),
+
+  /**
+   * Visualmobile item type.
+   */
   VISUALMOBILE("VM");
 
+  /**
+   * The Code.
+   */
   final String code;
 
   ItemType(String newCode) {

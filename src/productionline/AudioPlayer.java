@@ -9,6 +9,9 @@
 
 package productionline;
 
+/**
+ * The type Audio player.
+ */
 public class AudioPlayer extends Product implements MultimediaControl {
 
   private String audioSpecification;
@@ -16,13 +19,11 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /***
    *
-  * This constructor is setting the name of the product through the parent constructor,
-  * setting the audioSpecification field and declaring the mediaTpe as AUDIO.
-  * @param name The name of the manufacturer being passed to the parent constructor to set it.
-  * @param audioSpecification setting the audioSpecification field with the
-   * specification of the audio
-   *
-  ***/
+   * This constructor is setting the name of the product through the parent constructor,
+   * setting the audioSpecification field and declaring the mediaTpe as AUDIO.
+   * @param name The name of the manufacturer being passed to the parent constructor to set it.
+   * @param audioSpecification setting the audioSpecification field with the specification of the audio
+   */
   public AudioPlayer(String name, String audioSpecification) {
 
     super(name);

@@ -13,8 +13,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+/**
+ * The type Production line main.
+ */
 public class ProductionLineMain {
 
+  /**
+   * The entry point of application.
+   *
+   * @param args the input arguments
+   */
   public static void main(String[] args) {
 
     //Step 6 creating driver class to test AudioPlayer Class
