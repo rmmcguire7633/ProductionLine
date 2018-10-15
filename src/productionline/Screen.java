@@ -15,6 +15,13 @@ public class Screen implements ScreenSpec{
   int refreshRate;
   int responseTime;
 
+  public Screen(String resoltion, int refreshRate, int responseTime){
+
+    this.resoltion = resoltion;
+    this.refreshRate = refreshRate;
+    this.responseTime = responseTime;
+  }
+
   @Override
   public String getResolution() {
 
@@ -35,8 +42,8 @@ public class Screen implements ScreenSpec{
 
   @Override
   public String toString() {
-    return "resoltion='" + resoltion + '\n' +
-        "refreshRate=" + refreshRate + "\n" +
+    return "resoltion= " + resoltion + ", " +
+        "refreshRate=" + refreshRate + ", " +
         "responseTime=" + responseTime;
   }
 }

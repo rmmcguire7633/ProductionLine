@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * The type Product.
  */
-public abstract class Product implements Item {
+public abstract class Product implements Item, Comparable <Item> {
 
   private int serialNumber;
   private Date manufacuredOn;
@@ -67,6 +67,7 @@ public abstract class Product implements Item {
   public Product(String productName) {
 
     this.name = productName;
+
     serialNumber = currentProductionNumber;
 
     /***
@@ -77,6 +78,12 @@ public abstract class Product implements Item {
     currentProductionNumber++;
     manufacuredOn = new Date(System.currentTimeMillis());
     manufacturer = Item.manufacturer;
+  }
+
+  //Compare product name
+  public int compareTo(Item o) {
+
+    return name.compareTo(o.getName());
   }
 
   @Override

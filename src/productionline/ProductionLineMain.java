@@ -8,11 +8,14 @@
 
 package productionline;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.util.List;
 
 /**
  * The type Production line main.
@@ -33,10 +36,8 @@ public class ProductionLineMain {
     System.out.println("-------------------------------");
 
     //Step 10 creating a driver class to test the functionality of Screen class
-    Screen screen = new Screen();
-    screen.resoltion = "1080x420";
-    screen.responseTime = 6;
-    screen.refreshRate = 100;
+    Screen screen = new Screen("1080x500", 100, 20);
+
 
     System.out.println(screen);
 
@@ -45,6 +46,14 @@ public class ProductionLineMain {
     //Step 12 creating a driver to test the functionality of the MoviePlayer class
     MoviePlayer moviePlayer = new MoviePlayer("Dumbledore", screen, MonitorType.LED);
     System.out.println(moviePlayer);
+
+
+    System.out.println("-----------------------------");
+    MultiDriver.getMultiFunction();
+
+
+
+
   }
 }
 
