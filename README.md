@@ -3,7 +3,7 @@
 A structure for a production line.
 Allows the manufacturing plants to create a product and assign it values such as name and date of manufactured.
 This program is to be used with multimedia device products from the production line but this can be changed through the enum.
-This program will record all future production line items.
+This program will record all future production line items and automatically increment the product number when a product is created.
 
 ## Getting Started
 
@@ -38,8 +38,8 @@ perfered java IDE or run from the command line.
 * IntelliJ IDEA
 
 ## Version
-* Step 1-3 of the OOP Project
-
+* Version 1 Step 1-3 of the OOP Project
+* Version 1.01 Step 3-16 of the OOP Project
 ## Aurthor
 * Ryan McGuire
 
