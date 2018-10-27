@@ -1,3 +1,13 @@
+/*******************************************
+ *
+ * Author: Ryan McGuire
+ * Date: 10/15/2018
+ * Step 13-16
+ * Creates an array list to demonstrate the interface usage and
+ * sorts the list based on the productName.
+ *
+ *******************************************/
+
 package productionline;
 
 import java.util.ArrayList;
@@ -6,7 +16,12 @@ import java.util.List;
 
 public class MultiDriver {
 
-  public static void getMultiFunction(){
+  /**
+   * Creates the the product information and places into an ArrayList.
+   * Sorts the list based on the productName.
+   * Prints out all contents with in the created ArrayList.
+   * */
+  public static void getMultiFunction() {
 
     //step 13-16
     ArrayList<Product> sortedList = new ArrayList<Product>();
@@ -28,9 +43,15 @@ public class MultiDriver {
     printList(sortedList);
   }
 
-  private static void printList(List<Product> list)
-  {
-    for(Product p : list)
-      System.out.println(p +"\n");
+  /**
+   * prints all contents of the list.
+   * @param sortedList List that contents will be printed out.
+   * */
+  private static void printList(List<Product> sortedList) {
+
+    for (Product product : sortedList) {
+
+      System.out.println(product + "\n");
+    }
   }
 }

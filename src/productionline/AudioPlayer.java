@@ -3,7 +3,7 @@
  * Author: Ryan McGuire
  * Date: 10/12/2018
  * Step 5
- *
+ * Specifies the Audio PLayer Type
  *
  *******************************************/
 
@@ -17,13 +17,12 @@ public class AudioPlayer extends Product implements MultimediaControl {
   private String audioSpecification;
   private ItemType mediaType;
 
-  /***
-   *
+  /****
    * This constructor is setting the name of the product through the parent constructor,
    * setting the audioSpecification field and declaring the mediaTpe as AUDIO.
    * @param name The name of the manufacturer being passed to the parent constructor to set it.
-   * @param audioSpecification setting the audioSpecification field with the specification of the audio
-   */
+   * @param audioSpecification setting the audioSpecification field with the specification audio.
+   **/
   public AudioPlayer(String name, String audioSpecification) {
 
     super(name);
@@ -60,8 +59,16 @@ public class AudioPlayer extends Product implements MultimediaControl {
   @Override
   public String toString() {
 
-    return super.toString() +
-        "Audio Specification : " + audioSpecification + "\n" +
-        "Media Type : " + mediaType;
+    return super.toString()
+        +
+        "Audio Specification : "
+        +
+        audioSpecification
+        +
+        "\n"
+        +
+        "Media Type : "
+        +
+        mediaType;
   }
 }

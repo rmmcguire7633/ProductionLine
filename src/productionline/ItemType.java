@@ -35,7 +35,7 @@ public enum ItemType {
   VISUALMOBILE("VM");
 
   /**
-   * The Code.
+   * Allows for setting the Types defined in this enum.
    */
   final String code;
 

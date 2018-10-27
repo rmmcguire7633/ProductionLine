@@ -3,7 +3,7 @@
  * Author: Ryan McGuire
  * Date: 10/13/2018
  * Step 11
- *
+ * Provides the functionality of the movie player object.
  *
  *******************************************/
 
@@ -14,16 +14,15 @@ public class MoviePlayer extends Product implements MultimediaControl {
   private Screen screen;
   private MonitorType monitorType;
 
-  /***
-   *
+  /**
    * This constructor takes in the name of the product from
    * the constructor in the super class (Product).*
    * @param productName name of the product.
-   * @param screen takes in the screen resoltion, refresh rate, and response time.
+   * @param screen takes in the screen resolution, refresh rate, and response time.
    * @param monitorType the type of the monitor.
    *
    **/
-  public MoviePlayer (String productName, Screen screen, MonitorType monitorType){
+  public MoviePlayer(String productName, Screen screen, MonitorType monitorType) {
 
     super(productName);
     this.screen = screen;

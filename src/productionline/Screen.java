@@ -9,15 +9,21 @@
 
 package productionline;
 
-public class Screen implements ScreenSpec{
+public class Screen implements ScreenSpec {
 
-  String resoltion;
+  String resolution;
   int refreshRate;
   int responseTime;
 
-  public Screen(String resoltion, int refreshRate, int responseTime){
+  /**
+   * This constructor sets the stated fields.
+   * @param resolution the resolution of the screen object.
+   * @param refreshRate the refresh rate of the screen object.
+   * @param responseTime the response time of the screen object.
+   * */
+  public Screen(String resolution, int refreshRate, int responseTime) {
 
-    this.resoltion = resoltion;
+    this.resolution = resolution;
     this.refreshRate = refreshRate;
     this.responseTime = responseTime;
   }
@@ -25,7 +31,7 @@ public class Screen implements ScreenSpec{
   @Override
   public String getResolution() {
 
-    return resoltion;
+    return resolution;
   }
 
   @Override
@@ -42,8 +48,9 @@ public class Screen implements ScreenSpec{
 
   @Override
   public String toString() {
-    return "resoltion= " + resoltion + ", " +
-        "refreshRate=" + refreshRate + ", " +
-        "responseTime=" + responseTime;
+    return "resolution= " + resolution + ", "
+        + "refreshRate=" + refreshRate
+        + ", "
+        + "responseTime=" + responseTime;
   }
 }

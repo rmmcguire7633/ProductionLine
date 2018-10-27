@@ -16,7 +16,7 @@ import java.util.Date;
 public interface Item {
 
   /**
-   * The constant manufacturer.
+   * The constant manufacturer used for the default name of the manufacturer.
    */
   String manufacturer = "OracleProduction";
 

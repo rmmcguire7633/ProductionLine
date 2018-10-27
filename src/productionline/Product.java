@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * The type Product.
  */
-public abstract class Product implements Item, Comparable <Item> {
+public abstract class Product implements Item, Comparable<Item> {
 
   private int serialNumber;
   private Date manufacuredOn;
@@ -58,12 +58,11 @@ public abstract class Product implements Item, Comparable <Item> {
     return serialNumber;
   }
 
-  /***
-   *
+  /**
    * This Construct sets the name of the product and assigns a
    * serial number and manufactured on date to the product.
    * @param productName The product that is being modified.
-   */
+   **/
   public Product(String productName) {
 
     this.name = productName;

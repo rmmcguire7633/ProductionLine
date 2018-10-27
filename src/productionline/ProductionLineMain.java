@@ -10,12 +10,12 @@ package productionline;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.util.List;
 
 /**
  * The type Production line main.
@@ -29,6 +29,7 @@ public class ProductionLineMain {
    */
   public static void main(String[] args) {
 
+    /**
     //Step 6 creating driver class to test AudioPlayer Class
     AudioPlayer audio = new AudioPlayer("music box", "magic");
     System.out.println(audio);
@@ -49,11 +50,9 @@ public class ProductionLineMain {
 
 
     System.out.println("-----------------------------");
+    **/
+
     MultiDriver.getMultiFunction();
-
-
-
-
   }
 }
 
