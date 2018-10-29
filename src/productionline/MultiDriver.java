@@ -24,7 +24,7 @@ public class MultiDriver {
   public static void getMultiFunction() {
 
     //step 13-16
-    ArrayList<Product> sortedList = new ArrayList<Product>();
+    ArrayList<T> sortedList = new ArrayList<T>();
 
     sortedList.add(new AudioPlayer("Boombox", "Sorcery"));
     sortedList.add(new MoviePlayer("55 inch TV",
@@ -40,18 +40,18 @@ public class MultiDriver {
         new Screen("500x250", 15, 500), MonitorType.LCD));
 
     Collections.sort(sortedList);
-    printList(sortedList);
+    print(sortedList);
   }
 
   /**
    * prints all contents of the list.
    * @param sortedList List that contents will be printed out.
    * */
-  private static void printList(List<Product> sortedList) {
+  private static void print(List<T> sortedList) {
 
-    for (Product product : sortedList) {
+    for (T t : sortedList) {
 
-      System.out.println(product + "\n");
+      System.out.println(t + "\n");
     }
   }
 }

@@ -12,9 +12,9 @@ package productionline;
 import java.util.Date;
 
 /**
- * The type Product.
+ * The type T.
  */
-public abstract class Product implements Item, Comparable<Item> {
+public abstract class T implements Item, Comparable<Item> {
 
   private int serialNumber;
   private Date manufacuredOn;
@@ -63,7 +63,7 @@ public abstract class Product implements Item, Comparable<Item> {
    * serial number and manufactured on date to the product.
    * @param productName The product that is being modified.
    **/
-  public Product(String productName) {
+  public T(String productName) {
 
     this.name = productName;
 

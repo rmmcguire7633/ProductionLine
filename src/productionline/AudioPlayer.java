@@ -12,7 +12,7 @@ package productionline;
 /**
  * The type Audio player.
  */
-public class AudioPlayer extends Product implements MultimediaControl {
+public class AudioPlayer extends T implements MultimediaControl {
 
   private String audioSpecification;
   private ItemType mediaType;
