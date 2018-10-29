@@ -8,15 +8,15 @@ This program will record all future production line items and automatically incr
 
 ## Getting Started
 
-To get started clone or download code from this repository and place into youre 
-perfered java IDE or run from the command line.
+To get started clone or download code from this repository and place into your 
+preferred java IDE or run from the command line.
 
 ## Prerequisites
 
 * **Windows 10 or macOs X**
-* **Java jdk version 8 or higher**
+* **Java JDK version 8 or higher**
 * **Integrated development environment (IDE)** 
-  * ItelliJ IDEA that can be found at https://www.jetbrains.com/
+  * IntelliJ IDEA that can be found at https://www.jetbrains.com/
   * or Eclipse that can be found at https://www.eclipse.org/downloads/
 * **7-zip** file management that can be found at https://ninite.com/.
 * IntelliJ was used to run this program but any IDE should be able to run the program.
@@ -30,7 +30,7 @@ perfered java IDE or run from the command line.
 4. Set Run configurations to run from the ProductionLineMain class.
 
 ##### Using clone respository
-1. If cloneing respository.
+1. If cloning respository.
 2. Copy link.
 3. Inside your IDE go to file -> new -> Project from version cotrol -> git
 4. Paste link inside URL
