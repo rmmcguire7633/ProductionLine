@@ -44,7 +44,7 @@ preferred java IDE or run from the command line.
 ## Version
 * Version 1 Step 1-3 of the OOP Project
 * Version 1.01 Step 3-16 of the OOP Project
-## Aurthor
+## Author
 * Ryan McGuire
 
 ## Acknowledgments
