@@ -50,7 +50,6 @@ public class MultiDriver {
   private static void print(List<T> sortedList) {
 
     for (T t : sortedList) {
-
       System.out.println(t + "\n");
     }
   }
