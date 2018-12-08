@@ -9,14 +9,14 @@
 
 package productionline;
 
-public class MoviePlayer extends T implements MultimediaControl {
+public class MoviePlayer extends Product implements MultimediaControl {
 
   private Screen screen;
   private MonitorType monitorType;
 
   /**
    * This constructor takes in the name of the product from
-   * the constructor in the super class (T).*
+   * the constructor in the super class (Product).*
    * @param productName name of the product.
    * @param screen takes in the screen resolution, refresh rate, and response time.
    * @param monitorType the type of the monitor.

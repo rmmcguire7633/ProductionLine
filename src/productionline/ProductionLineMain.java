@@ -52,7 +52,9 @@ public class ProductionLineMain {
     System.out.println("-----------------------------");
     **/
 
-    MultiDriver.getMultiFunction();
+    //MultiDriver.getMultiFunction();
+
+    TestProductionLine t = new TestProductionLine();
   }
 }
 
