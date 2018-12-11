@@ -88,7 +88,8 @@ public abstract class Product implements Item, Comparable<Item> {
   @Override
   public String toString() {
 
-    return "Manufacturer : "
+    return "\n"
+        + "Manufacturer : "
         + manufacturer
         + "\n"
         + "Serial Number : "

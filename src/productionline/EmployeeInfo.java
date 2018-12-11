@@ -1,6 +1,22 @@
+/*******************************************************************
+ *
+ * Author: Ryan McGuire
+ * Date: 12/09/18
+ * Step 18-20
+ *
+ * Promts the user to enter their first and last name and generates a user code in the form of
+ * first letter of first name + last name. ex(Ryan McGuire would be RMcGuire).
+ *
+ * Promts the user for their department ID and checks if its in the format of four
+ * letters and two numbers. The department code must also be in the format of first
+ * letter must be in uppercase with the following three all being lowercase and no spaces.
+ *
+ ********************************************************************/
+
 package productionline;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EmployeeInfo {
@@ -10,109 +26,151 @@ public class EmployeeInfo {
 
   //Step 19 declaration
   private String deptId;
-  private Pattern p;
-  private Scanner in;
-  private String completeInput;
+  private Pattern p = Pattern.compile("[A-Z][a-z]{3}[0-9]{2}");
+  private Scanner in = new Scanner(System.in, "UTF-8");
 
-  public EmployeeInfo () {
+  /**
+   * Constructor used to set name and deptId.
+   */
+  public EmployeeInfo() {
 
     setName();
-
-    this.p = Pattern.compile("[a-zA-Z]*\\\\s[a-zA-Z]*\\\\s[a-zA-Z0-9]*$\"");
     setDeptId();
+    in.close();
   }
 
-  public StringBuilder getName(){
+  /**
+   * Gets the name field.
+   * @return the name.
+   */
+  public StringBuilder getName() {
 
-    String input_name = inputName();
-
-    StringBuilder newName = new StringBuilder(input_name);
-    if (checkName(newName)) {
-
-      createEmployeeCode(newName);
-    } else {
-
-      this.code = "guest";
-    }
-
-    return newName;
+    return name;
   }
 
+  /**
+   * Gets the employee code.
+   * @return the employee code.
+   */
   public String getCode() {
 
-    return this.code;
+    return code;
   }
 
-  private void setName(){
+  /**
+   * Sets the name.
+   */
+  private void setName() {
 
-    this.name = getName();
+    String nameString = inputName();
+
+    name = new StringBuilder(nameString);
+
+    createEmployeeCode(name);
   }
 
+  /**
+   * Creates the employee code by taking the first letter of the first name and adding the last
+   * last name to it.
+   * @param name the name of the employee.
+   */
   private void createEmployeeCode(StringBuilder name) {
 
-    String[] splitString = name.toString().split(" ");
-    this.code = Character.toString(splitString[0].charAt(0)) + splitString[1];
+    int spaceMarker = name.indexOf(" ");
+
+    String lastName = name.substring((spaceMarker + 1), name.length());
+    code = name.charAt(0) + lastName;
   }
 
+  /**
+   * Gets the name from the user.
+   * @return the user first and last name.
+   */
   private String inputName() {
 
-    Scanner sc = new Scanner(System.in);
-    this.in = sc;
+    System.out.println("Please enter your first and last name: ");
 
-    System.out.println("Enter the Employee First Name, Last Name and Department(Separated by"
-        + " ' ')");
+    StringBuilder userInput = new StringBuilder(in.nextLine());
 
-    completeInput = sc.nextLine();
-    return completeInput;
-  }
+    boolean spaceChecker = checkName(userInput);
 
-  private boolean checkName (StringBuilder name) {
+    if(spaceChecker) {
 
-    for (int i=0; i<name.length();i++) {
+      createEmployeeCode(userInput);
+    } else {
 
-      if(name.charAt(i)==' ') {
-
-        return true;
-      }
+      code = "guest";
     }
 
-    return false;
+    return userInput.toString();
+  }
+
+  /**
+   * Checks for a space in the name.
+   * @param name the name entered by the user.
+   * @return the to string of the user name.
+   */
+  private boolean checkName(StringBuilder name) {
+
+    return name.toString().contains(" ");
   }
 
   public String getDeptId() {
 
-    if(validId(completeInput)) {
+    System.out.println("Please enter the department ID: ");
 
-      return completeInput.split(" ")[2];
-    } else {
+    String idInput = in.nextLine();
 
-      return "None01";
+    if (validId(idInput)) {
+
+      return idInput;
     }
+
+    return "None01";
   }
 
-  private void setDeptId() {
+  /**
+   * Gets the ID of the department.
+   * @return the deptId
+   */
+  private String setDeptId() {
 
-    this.deptId = getDeptId();
+    return deptId = getDeptId();
   }
 
-  private String getId() {
-
-    return this.deptId;
-  }
-
+  /**
+   * Checks if ID number is in a valid format.
+   * @param id the id entered by the user.
+   * @return deptId entered by the employee.
+   */
   private boolean validId(String id) {
 
-    if(p.matcher(id).find()) {
-
-      return true;
-    }
-
-    return false;
+    Matcher matchId = p.matcher(id);
+    return matchId.matches();
   }
 
+  /**
+   * For step 20, takes the name of the employee and reverses it.
+   * @param id the employee information.
+   * @return the reverse of the employee information.
+   */
+  public String reverseString(String id) {
+
+    StringBuilder stringBuilder = new StringBuilder(id);
+
+    stringBuilder = stringBuilder.reverse();
+
+    return stringBuilder.toString();
+  }
+
+  /**
+   * Prints out the employee code and department number.
+   * @return printed out version of employee code and department number.
+   */
   @Override
   public String toString() {
 
-    return "Employee Code: " + this.getCode() + ", Department Id: " + this.getId();
+    return "Employee Code: " + code + "\n"
+        + "Department Number: " + deptId;
   }
 }
