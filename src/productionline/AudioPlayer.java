@@ -3,7 +3,7 @@
  * Author: Ryan McGuire
  * Date: 10/12/2018
  * Step 5
- * Specifies the Audio PLayer Type
+ * Specifies the Audio PLayer Type.
  *
  *******************************************/
 
