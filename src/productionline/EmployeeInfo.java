@@ -22,7 +22,6 @@ import java.util.regex.Pattern;
 /**
  * Promts the user to enter their first and last name and generates a user code in the form of
  * first letter of first name + last name. ex(Ryan McGuire would be RMcGuire).
- *
  * Promts the user for their department ID and checks if its in the format of four
  * letters and two numbers. The department code must also be in the format of first
  * letter must be in uppercase with the following three all being lowercase and no spaces.
@@ -168,11 +167,12 @@ public class EmployeeInfo {
    */
   public String reverseString(String id) {
 
-    StringBuilder stringBuilder = new StringBuilder(id);
+    if (id.length() == 0) {
 
-    stringBuilder = stringBuilder.reverse();
+      return id;
+    }
 
-    return stringBuilder.toString();
+    return reverseString(id.substring(1)) + id.charAt(0);
   }
 
   /**
