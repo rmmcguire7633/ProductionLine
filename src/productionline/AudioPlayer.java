@@ -11,6 +11,7 @@ package productionline;
 
 /**
  * The type Audio player.
+ * Used to store Information from about the AudioPlayer object.
  */
 public class AudioPlayer extends Product implements MultimediaControl {
 

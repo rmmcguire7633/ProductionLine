@@ -10,6 +10,9 @@
 
 package productionline;
 
+/**
+ * MonitorType is either LCD or LED.
+ */
 public enum MonitorType {
 
   LCD,

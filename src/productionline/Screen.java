@@ -9,6 +9,9 @@
 
 package productionline;
 
+/**
+ * The Screen type that is defined by resolution, refresh rate, and response time.
+ */
 public class Screen implements ScreenSpec {
 
   String resolution;

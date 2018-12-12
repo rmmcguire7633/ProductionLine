@@ -21,6 +21,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
+/**
+ * This class save both the products and the employee information to
+ * file so create two methods that override each other that accept either the employee object or
+ * products arraylist.
+ */
 public class ProcessFiles {
 
   private Path p1;

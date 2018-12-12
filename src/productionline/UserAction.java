@@ -20,6 +20,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+/**
+ * Allow a user to Add a new product and to specify how many items of that product
+ * should be created.
+ * The program will then create these items and store them in a collection.
+ * The collection can be displayed at any time.
+ * New Products can be added at any time.
+ * Production statistics can be displayed – Total items produced, number of each item,
+ * the number of unique products created etc.
+ * The operator will decide when to stop the program.
+ */
 public class UserAction {
 
   private static Scanner scan = new Scanner(System.in, "UTF-8");

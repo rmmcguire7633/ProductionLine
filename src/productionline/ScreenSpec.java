@@ -9,6 +9,9 @@
 
 package productionline;
 
+/**
+ * Defines the details of the Screen type.
+ */
 public interface ScreenSpec {
 
   public String getResolution();

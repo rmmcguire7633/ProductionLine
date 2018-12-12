@@ -9,6 +9,9 @@
 
 package productionline;
 
+/**
+ * Provides the functionality of the movie player object.
+ */
 public class MoviePlayer extends Product implements MultimediaControl {
 
   private Screen screen;
