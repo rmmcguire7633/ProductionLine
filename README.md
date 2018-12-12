@@ -4,6 +4,7 @@ A structure for a production line.
 Allows the manufacturing plants to create and and assign it values such as name and date of manufactured.
 This program is to be used with multimedia device products from the production line but this can be changed through the enum.
 This program will record all future production line items and automatically increment the product number when a product is created.
+This Program allows the user to enter product information and store that information in side a list.
 
 
 ## Getting Started
@@ -39,11 +40,12 @@ preferred java IDE or run from the command line.
 * IntelliJ IDEA
 
 ## Class Diagram
-![productionline](https://user-images.githubusercontent.com/35510316/47608337-eeb93780-d9f9-11e8-9998-310b12658d1e.png)
+[productionline.pdf](https://github.com/rmmcguire7633/ProductionLine/files/2669980/productionline.1.pdf)
 
 ## Version
 * Version 1 Step 1-3 of the OOP Project
 * Version 1.01 Step 3-16 of the OOP Project
+* Versioon 1.02 Step 18-23
 ## Author
 * Ryan McGuire
 
