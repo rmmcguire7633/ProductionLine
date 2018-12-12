@@ -39,7 +39,7 @@ preferred java IDE or run from the command line.
 * IntelliJ IDEA
 
 ## Class Diagram
-![productionline](https://user-images.githubusercontent.com/35510316/47608337-eeb93780-d9f9-11e8-9998-310b12658d1e.png)
+[productionline (1).pdf](https://github.com/rmmcguire7633/ProductionLine/files/2669980/productionline.1.pdf)
 
 ## Version
 * Version 1 Step 1-3 of the OOP Project
