@@ -1,3 +1,14 @@
+/*******************************************
+ *
+ * Author: Ryan McGuire
+ * Date: 12/10/2018
+ * Step 21
+ * This class save both the products and the employee information to
+ * file so create two methods that override each other that accept either the employee object or
+ * products arraylist.
+ *
+ *******************************************/
+
 package productionline;
 
 import java.io.FileOutputStream;
@@ -16,11 +27,14 @@ public class ProcessFiles {
   private Path p2;
   private Path p3;
 
+  /**
+   * Constructor used to set p1, p2, and p3.
+   */
   public ProcessFiles() {
 
     /**
      * The assignment requires we hard code the absolute path.
-     * */
+     **/
     p1 = Paths.get("C:/LineTests");
     p2 = Paths.get("TestResults.txt");
     p3 = p1.resolve(p2);
@@ -28,11 +42,15 @@ public class ProcessFiles {
     createDirectory();
   }
 
+  /**
+   * Creates the directory.
+   * If Directory does not exist, create directory.
+   */
   public void createDirectory() {
 
     try {
 
-      if(Files.notExists(p1)) {
+      if (Files.notExists(p1)) {
 
         Files.createDirectory(p1);
       }
@@ -42,6 +60,11 @@ public class ProcessFiles {
     }
   }
 
+  /**
+   * Writes the employee information entered by the user into the file.
+   * @param emp all the emplyee information.
+   * @throws IOException the IO exception thrown in case there is no directory.
+   */
   public void writeFile(EmployeeInfo emp) throws IOException {
 
     Writer write = new OutputStreamWriter(new FileOutputStream(p3.toString()), "UTF-8");
@@ -51,6 +74,11 @@ public class ProcessFiles {
     printWrite.close();
   }
 
+  /**
+   * Wrtites the products into the the file.
+   * @param products the product information.
+   * @throws IOException the IO exception thrown in case there is no directory.
+   */
   public void writeFile(ArrayList<Product> products) throws IOException {
 
     Writer write = new OutputStreamWriter(new FileOutputStream(p3.toString()), "UTF-8");

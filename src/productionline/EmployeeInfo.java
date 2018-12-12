@@ -26,7 +26,7 @@ public class EmployeeInfo {
 
   //Step 19 declaration
   private String deptId;
-  private Pattern p = Pattern.compile("[A-Z][a-z]{3}[0-9]{2}");
+  private Pattern pattern = Pattern.compile("[A-Z][a-z]{3}[0-9]{2}");
   private Scanner in = new Scanner(System.in, "UTF-8");
 
   /**
@@ -94,7 +94,7 @@ public class EmployeeInfo {
 
     boolean spaceChecker = checkName(userInput);
 
-    if(spaceChecker) {
+    if (spaceChecker) {
 
       createEmployeeCode(userInput);
     } else {
@@ -115,6 +115,10 @@ public class EmployeeInfo {
     return name.toString().contains(" ");
   }
 
+  /**
+   * Gets the DeptID.
+   * @return the DeptId
+   */
   public String getDeptId() {
 
     System.out.println("Please enter the department ID: ");
@@ -145,7 +149,7 @@ public class EmployeeInfo {
    */
   private boolean validId(String id) {
 
-    Matcher matchId = p.matcher(id);
+    Matcher matchId = pattern.matcher(id);
     return matchId.matches();
   }
 

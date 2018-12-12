@@ -1,3 +1,14 @@
+/*******************************************
+ *
+ * Author: Ryan McGuire
+ * Date: 12/10/18
+ * Step 22
+ * Create a driver class named ViewFileInfo that will read the information from the
+ * TestResults.txt file and display the contents to the console.  Use a try statement to
+ * handle situations where the file does not exist.
+ *
+ *******************************************/
+
 package productionline;
 
 import java.io.File;
@@ -6,6 +17,9 @@ import java.util.Scanner;
 
 public class ViewFileInfo {
 
+  /**
+   * Reads the information from the TestResults.txt file and displays the contents of the file.
+   */
   public static void fileRead() {
 
     /**
