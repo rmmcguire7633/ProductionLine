@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>productionline</OriginalElement>
+  <nodes>
+    <node x="300.75" y="190.0">productionline.Product</node>
+    <node x="0.0" y="470.0">productionline.MoviePlayer</node>
+    <node x="783.0" y="722.0">productionline.MultiDriver</node>
+    <node x="35.75" y="246.5">productionline.MultimediaControl</node>
+    <node x="326.75" y="0.0">productionline.Item</node>
+    <node x="162.0" y="1039.0">productionline.ProductionLineMain</node>
+    <node x="0.0" y="722.0">productionline.UserAction</node>
+    <node x="577.0" y="722.0">productionline.ItemType</node>
+    <node x="921.75" y="0.0">productionline.ScreenSpec</node>
+    <node x="376.0" y="1039.0">productionline.ViewFileInfo</node>
+    <node x="0.0" y="1039.0">productionline.MonitorType</node>
+    <node x="312.0" y="470.0">productionline.AudioPlayer</node>
+    <node x="281.0" y="722.0">productionline.ProcessFiles</node>
+    <node x="900.75" y="145.0">productionline.Screen</node>
+    <node x="572.75" y="0.0">productionline.EmployeeInfo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="productionline.Product" target="productionline.Item">
+      <point x="0.0" y="-115.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="productionline.AudioPlayer" target="productionline.Product">
+      <point x="53.0" y="-103.5" />
+      <point x="56.75" y="115.0" />
+    </edge>
+    <edge source="productionline.MoviePlayer" target="productionline.MultimediaControl">
+      <point x="-73.0" y="-103.5" />
+      <point x="-37.25" y="58.5" />
+    </edge>
+    <edge source="productionline.AudioPlayer" target="productionline.MultimediaControl">
+      <point x="-53.0" y="-103.5" />
+      <point x="365.0" y="440.0" />
+      <point x="147.5" y="440.0" />
+      <point x="37.25" y="58.5" />
+    </edge>
+    <edge source="productionline.MoviePlayer" target="productionline.Product">
+      <point x="73.0" y="-103.5" />
+      <point x="219.0" y="450.0" />
+      <point x="357.5" y="450.0" />
+      <point x="-56.75" y="115.0" />
+    </edge>
+    <edge source="productionline.Screen" target="productionline.ScreenSpec">
+      <point x="0.0" y="-70.5" />
+      <point x="0.0" y="47.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="215.0" y="205.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
