@@ -6,6 +6,9 @@ This program is to be used with multimedia device products from the production l
 This program will record all future production line items and automatically increment the product number when a product is created.
 This Program allows the user to enter product information and store that information in side a list.
 
+## JavaDoc
+[JavaDoc](https://rmmcguire7633.github.io/ProductionLine/.)
+
 
 ## Getting Started
 
